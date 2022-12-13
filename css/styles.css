@@ -11,6 +11,16 @@ html, body, main {
     height: 100%;
 }
 
+.sr-only {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
 body {
     background-color: var(--cream);
     font-family: Montserrat, sans-serif;
@@ -34,13 +44,9 @@ body {
     height: inherit;
 }
 
-.img_desktop {
+.image {
     height: 100%;
     border-radius: 0.75em 0 0 0.75em;
-}
-
-.img_mobile {
-    display: none;
 }
 
 .product_body {
@@ -53,8 +59,8 @@ body {
 
 .product_category {
     text-transform: uppercase;
-    font-size: 0.75em;
-    letter-spacing: 0.35em;
+    font-size: 0.74em;
+    letter-spacing: 0.45em;
     margin: 0;
 }
 
@@ -109,7 +115,7 @@ button {
 .button_text {
     display: inline;
     vertical-align: middle;
-    font-size: 1.15em;
+    font-size: 1.1em;
     font-weight: 700;
 }
 
@@ -134,22 +140,19 @@ button:hover {
 
     .card {
         width: 92vw;
-        max-width: 22em;
+        max-width: 21.4em;
         display: block;
         margin-top: 1.75em;
+        height: 15em;
     }
 
     .product_image {
         height: auto;
     }
 
-    .img_desktop {
-        display: none;
-    }
-
-    .img_mobile {
+    .image {
         display: block;
-        width: 100%;
+        width: 100% !important;
         border-radius: 0.75em 0.75em 0 0;
     }
 
