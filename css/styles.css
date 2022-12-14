@@ -104,6 +104,7 @@ button {
     border-radius: 0.5em;
     text-align: center;
     color: var(--white);
+    transition: 0.2s;
 }
 
 .button_image {
@@ -122,6 +123,7 @@ button {
 button:hover {
     background-color: var(--dark-cyan-hovered);
     cursor: pointer;
+    transition: 0.2s;
 }
 
 .attribution { 
